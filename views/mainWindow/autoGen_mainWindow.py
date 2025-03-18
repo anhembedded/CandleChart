@@ -17,8 +17,8 @@ from PySide6.QtGui import (QAction, QBrush, QColor, QConicalGradient,
     QPainter, QPalette, QPixmap, QRadialGradient,
     QTransform)
 from PySide6.QtWidgets import (QApplication, QGridLayout, QMainWindow, QMenu,
-    QMenuBar, QPushButton, QSizePolicy, QStatusBar,
-    QTabWidget, QWidget)
+    QMenuBar, QSizePolicy, QStatusBar, QTabWidget,
+    QWidget)
 
 class Ui_mainWindow_autoGen_T(object):
     def setupUi(self, mainWindow):
@@ -37,25 +37,20 @@ class Ui_mainWindow_autoGen_T(object):
         self.tab_1.setObjectName(u"tab_1")
         self.gridLayout_5 = QGridLayout(self.tab_1)
         self.gridLayout_5.setObjectName(u"gridLayout_5")
-        self.gridLayout_1 = QGridLayout()
-        self.gridLayout_1.setObjectName(u"gridLayout_1")
-        self.pushButton = QPushButton(self.tab_1)
-        self.pushButton.setObjectName(u"pushButton")
+        self.layoutTab1 = QGridLayout()
+        self.layoutTab1.setObjectName(u"layoutTab1")
 
-        self.gridLayout_1.addWidget(self.pushButton, 0, 0, 1, 1)
-
-
-        self.gridLayout_5.addLayout(self.gridLayout_1, 0, 0, 1, 1)
+        self.gridLayout_5.addLayout(self.layoutTab1, 0, 0, 1, 1)
 
         self.tabWidget.addTab(self.tab_1, "")
         self.tab_2 = QWidget()
         self.tab_2.setObjectName(u"tab_2")
         self.gridLayout_4 = QGridLayout(self.tab_2)
         self.gridLayout_4.setObjectName(u"gridLayout_4")
-        self.gridLayout_3 = QGridLayout()
-        self.gridLayout_3.setObjectName(u"gridLayout_3")
+        self.layoutTab2 = QGridLayout()
+        self.layoutTab2.setObjectName(u"layoutTab2")
 
-        self.gridLayout_4.addLayout(self.gridLayout_3, 0, 0, 1, 1)
+        self.gridLayout_4.addLayout(self.layoutTab2, 0, 0, 1, 1)
 
         self.tabWidget.addTab(self.tab_2, "")
 
@@ -86,7 +81,6 @@ class Ui_mainWindow_autoGen_T(object):
     def retranslateUi(self, mainWindow):
         mainWindow.setWindowTitle(QCoreApplication.translate("mainWindow_autoGen_T", u"MainWindow", None))
         self.actionthere.setText(QCoreApplication.translate("mainWindow_autoGen_T", u"there", None))
-        self.pushButton.setText(QCoreApplication.translate("mainWindow_autoGen_T", u"PushButton", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_1), QCoreApplication.translate("mainWindow_autoGen_T", u"Tab 1", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), QCoreApplication.translate("mainWindow_autoGen_T", u"Tab 2", None))
         self.menuhi.setTitle(QCoreApplication.translate("mainWindow_autoGen_T", u"hi", None))
